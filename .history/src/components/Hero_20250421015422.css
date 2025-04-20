@@ -1,0 +1,51 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem;
+  background: linear-gradient(to right, #1a1a1a, #2e8b57); /* dark to greenish */
+  color: white;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 2rem;
+  flex: 1;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  margin-bottom: 1rem;
+}
+
+.bouncing-letters span {
+  display: inline-block;
+  animation: bounce 1s infinite;
+}
+
+.bouncing-letters span:nth-child(odd) {
+  animation-delay: 0.1s;
+}
+.bouncing-letters span:nth-child(even) {
+  animation-delay: 0.2s;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
