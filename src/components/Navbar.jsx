@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
-  // State to manage active link
   const [activeLink, setActiveLink] = useState('home');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Handle active link change
   const handleLinkClick = (link) => {
     setActiveLink(link);
     setIsMenuOpen(false); // Close the menu when a link is clicked
@@ -14,44 +13,44 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <a href="#home" className="logo">SoftwareDev</a>
+      <Link to="/" className="logo">SoftwareDev</Link>
       <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
         <ul>
           <li>
-            <a 
-              href="#home" 
+            <Link
+              to="/"
               className={activeLink === 'home' ? 'active' : ''}
               onClick={() => handleLinkClick('home')}
             >
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a 
-              href="#skills" 
+            <Link
+              to="/skills"  // Changed from "#skills" to "/skills"
               className={activeLink === 'skills' ? 'active' : ''}
               onClick={() => handleLinkClick('skills')}
             >
               Skills
-            </a>
+            </Link>
           </li>
           <li>
-            <a 
-              href="#projects" 
+            <Link
+              to="/projects"  // Changed from "#projects" to "/projects"
               className={activeLink === 'projects' ? 'active' : ''}
               onClick={() => handleLinkClick('projects')}
             >
               Projects
-            </a>
+            </Link>
           </li>
           <li>
-            <a 
-              href="#contact" 
+            <Link
+              to="/contact"
               className={activeLink === 'contact' ? 'active' : ''}
               onClick={() => handleLinkClick('contact')}
             >
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

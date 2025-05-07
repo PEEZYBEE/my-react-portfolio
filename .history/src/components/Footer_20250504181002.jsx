@@ -15,7 +15,7 @@ const Footer = () => {
             <i className="fa-brands fa-whatsapp"></i>
           </a>
          
-            <a href="mailto:keithselim@gmail.com" data-name="Email">
+            <a href="mailto:keith.com" data-name="Email">
             <i className="fa-solid fa-envelope"></i>
           </a>
         </div>

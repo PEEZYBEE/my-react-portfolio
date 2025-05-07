@@ -10,13 +10,15 @@ const Footer = () => {
           <a href="https://github.com/PEEZYBEE" data-name="GitHub">
             <i className="fa-brands fa-github"></i>
           </a>
-          
+          <a href="https://instagram.com/yourusername" data-name="Instagram">
+            <i className="fa-brands fa-instagram"></i>
+          </a>
           <a href="https://wa.me/+254769818227" data-name="WhatsApp">
             <i className="fa-brands fa-whatsapp"></i>
           </a>
-         
-            <a href="mailto:keithselim@gmail.com" data-name="Email">
-            <i className="fa-solid fa-envelope"></i>
+          <a href="https://facebook.com/yourprofile" data-name="Facebook">
+            <i className="fa-brands fa-facebook"></i>
+          
           </a>
         </div>
       </div>
