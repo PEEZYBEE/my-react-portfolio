@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './contact.css'; 
 import './footer.css';
 
+
+
 const Contact = () => {
   const [status, setStatus] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -59,11 +61,13 @@ const Contact = () => {
     }
   };
 
+
+
+
+
   return (
     <section id="contact" className="contact-form">
       <h2>Get in Touch</h2>
-      <p>If you’d like to collaborate, ask a question, or just say hello, feel free to send a message below.</p>
-
       <form
         action="https://formspree.io/f/your-form-id"
         method="POST"
